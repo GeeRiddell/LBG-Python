@@ -3,9 +3,13 @@ pipeline{
         stages{
             stage('On Jenkins Server'){
                 steps{
-                    sh '''
-                    ./dockerscript.sh
-                    '''
+                    checkout scm
+
+                }
+            }
+            stage('Execute docker script'){
+                steps{
+                    sh './dockerscript.sh'
                 }
             }
         }
