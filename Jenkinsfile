@@ -13,7 +13,7 @@ pipeline{
                     chmod +x dockerscript.sh
                     ./dockerscript.sh
 
-                    echo -e "\ngreat success"
+                    echo -e "\ngreat success!"
                     '''
                 }
             }
