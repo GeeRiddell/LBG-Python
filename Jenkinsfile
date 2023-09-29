@@ -17,5 +17,20 @@ pipeline{
                     '''
                 }
             }
+            stage('Run unit tests'){
+                steps{
+                    sh '''
+                    pip3 install -r requirements.txt
+                    python3 lbg.test.py
+                    '''
+                }
+            }
+            stage('cleanup'){
+                steps{
+                    sh '''
+                    docker push seethatgee/python-app
+                    '''
+                }
+            }
         }
 }
