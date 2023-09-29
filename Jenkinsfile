@@ -20,7 +20,6 @@ pipeline{
             stage('Run unit tests'){
                 steps{
                     sh '''
-                    pip install -r requirements.txt
                     python lbg.test.py
                     '''
                 }
