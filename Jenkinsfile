@@ -9,7 +9,10 @@ pipeline{
             }
             stage('Execute docker script'){
                 steps{
-                    sh './dockerscript.sh'
+                    sh '''
+                    chmod +x dockerscript.sh
+                    ./dockerscript.sh
+                    '''
                 }
             }
         }
