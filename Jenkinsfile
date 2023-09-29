@@ -20,6 +20,7 @@ pipeline{
             stage('Run unit tests'){
                 steps{
                     sh '''
+                    sleep 3
                     python3 lbg.test.py
                     '''
                 }
