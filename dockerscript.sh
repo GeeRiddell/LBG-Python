@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export PORT=9000
 docker rm -f python-app
 docker rmi seethatgee/python-app
 docker build -t seethatgee/python-app .
