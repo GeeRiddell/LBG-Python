@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('On Jenkins Server'){
                 steps{
-                    checkout scm
+                    git clone https://github.com/GeeRiddell/LBG-Python.git
 
                 }
             }
