@@ -4,8 +4,7 @@ pipeline{
             stage('On Jenkins Server'){
                 steps{
                     sh '''
-                    echo "Hello, you are in jenkins server"
-                    hostname
+                    ./dockerscript.sh
                     '''
                 }
             }
