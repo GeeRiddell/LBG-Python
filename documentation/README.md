@@ -64,3 +64,7 @@ git reset --hard COMMIT_IDENTIFIER
 ```
 git pull REMOTE_NAME BRANCH_NAME
 ```
+## To create a script
+```
+chmod +x filename.sh
+```
