@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ## Running the application
 
-In order to run the application, from your git bash terminal run:
+In order to run the application, from your git bash terminal run
 
 ~~~ bash
 python lbg.py
