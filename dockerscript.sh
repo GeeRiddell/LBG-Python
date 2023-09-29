@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git add .
 read -p "Enter commit message: " commit_message
 git commit -m "$commit_message"
@@ -7,6 +9,6 @@ echo "changes added to repo"
 docker rm -f python-app
 docker rmi seethatgee/python-app
 docker build -t seethatgee/python-app .
-docker run -d  --name python-app seethatgee/python-app:latest
+docker run -d -p 80:${PORT} -e PORT=${PORT} --name python-app seethatgee/python-app:latest
 
 echo "done"
