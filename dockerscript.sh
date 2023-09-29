@@ -1,3 +1,9 @@
+git add .
+read -p "Enter commit message" commit_message
+git commit -m "$commit_message"
+git push
+echo "changes added to repo"
+
 docker rm -f python-app
 docker rmi seethatgee/python-app
 docker build -t seethatgee/python-app .
